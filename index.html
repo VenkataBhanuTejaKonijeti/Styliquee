@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fashion Clothing Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Landing Page -->
+  <section id="landing" class="centered">
+    <h1 class="fade-in">"Style is a way to say who you are without speaking."</h1>
+    <button id="orderBtn" class="btn">Order Now</button>
+  </section>
+
+  <!-- Main Shop -->
+  <section id="shop" class="hidden">
+    <nav id="categories">
+      <button class="category-btn active" data-cat="men">Men</button>
+      <button class="category-btn" data-cat="women">Women</button>
+      <button class="category-btn" data-cat="accessories">Accessories</button>
+      <button class="category-btn" data-cat="footwear">Footwear</button>
+    </nav>
+
+    <div id="products"></div>
+
+    <aside id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <div id="cartTotal">Total: $0.00</div>
+      <button id="checkoutBtn" class="btn">Checkout</button>
+    </aside>
+  </section>
+
+  <!-- Address Form Modal -->
+  <div id="addressModal" class="modal">
+    <div class="modal-content">
+      <h2>Enter Your Address</h2>
+      <form id="addressForm">
+        <input type="text" id="name" placeholder="Full Name" required><br>
+        <input type="text" id="street" placeholder="Street Address" required><br>
+        <input type="text" id="city" placeholder="City" required><br>
+        <input type="text" id="zip" placeholder="ZIP Code" required><br>
+        <button type="submit" class="btn">Proceed to Payment</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- QR Code Section -->
+  <div id="paymentSection" class="modal">
+    <div class="modal-content">
+      <h2>Scan to Pay</h2>
+      <p>Please scan this QR code with any UPI app to complete payment.</p>
+      <img src="qr.jpg" alt="QR Code" style="width: 250px;">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
