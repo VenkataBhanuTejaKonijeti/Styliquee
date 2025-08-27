@@ -11,8 +11,7 @@
 - 💡 Smooth transitions and responsive layout
 
 ## 🚀 Live Demo
-[Click here to view the website][(https://venkatabhanutejakonijeti.github.io/Stylique/)]
-> *(Replace with your actual GitHub Pages link)*
+[Click here to view the website]https://venkatabhanutejakonijeti.github.io/Styliquee/
 
 ## 🛠️ Technologies Used
 - HTML5
